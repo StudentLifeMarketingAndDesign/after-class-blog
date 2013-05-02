@@ -1079,8 +1079,8 @@ want to style a page via body class? go ahead
 /*Page Header (matching After Class's main site) */
 
 #page_header {
-  height: 240px;
-  background-image: url("../images/afterclass_illustration.png");
+  height: 235px;
+  background-image: url("../images/afterclass_illustration.jpg");
   background-position: 170px 0;
   }
 
@@ -1112,11 +1112,11 @@ want to style a page via body class? go ahead
 
 #page_header p {
   position: relative;
-  top: -30px;
-  left: 80px;
+  top: -40px;
+  left: 60px;
   /*z-index: 50;*/
   font-size: 20px;
-  color: #ffe99b;
+  color: #d0c2d0;
   text-transform: lowercase;
   /*background-image: url("../images/taglinebox.png");*/
   background-repeat: no-repeat;
@@ -1128,9 +1128,19 @@ want to style a page via body class? go ahead
 
 .container {
   /*position: relative;*/
-  width: 1000px;
+  width: 1170px;
+  height: 100%;
   margin: auto;
+  background: url("../images/header-buildings.png");
+  background-position-y: 90%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
   }
+  
+.container#footer{
+	background-image: none;
+	text-align: center;
+}
 
 
 /* Main Content Styles and Sidebar */
@@ -1298,15 +1308,16 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #2791ae;
-	background: -moz-linear-gradient(top, #2791ae 0%, #23839d 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2791ae), color-stop(100%,#23839d));
-	background: -webkit-linear-gradient(top, #2791ae 0%,#23839d 100%);
-	background: -o-linear-gradient(top, #2791ae 0%,#23839d 100%);
-	background: -ms-linear-gradient(top, #2791ae 0%,#23839d 100%);
-	background: linear-gradient(top, #2791ae 0%,#23839d 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2791ae', endColorstr='#23839d',GradientType=0 );
-
+text-align: center;
+background-image: linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -o-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -moz-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -webkit-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -ms-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(37,34,34)), color-stop(0.57, rgb(40,36,37)) );
+border-bottom: 1px solid rgba(68, 68, 68, 0.39);
+border-top: 1px solid rgba(68, 68, 68, 0.39);
+box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 }
 
 	.menu {}
@@ -1325,7 +1336,12 @@ NAVIGATION STYLES
 				
 				}
 					.menu li a:hover {
-						background-color: #dedede;
+						background-color: #342836;
+    -webkit-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    -moz-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    -o-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    -ms-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
 					}
 				
 					.menu li:first-child a {}

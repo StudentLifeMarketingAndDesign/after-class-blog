@@ -664,7 +664,7 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #EBE5E6;
-	background-image: url('../images/black-Linen.png');
+	background-image: url('../images/binding_dark.png');
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -885,6 +885,7 @@ NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.less */
 .menu {
+border-left: 1px solid rgba(68, 68, 68, 0.39);
  /* margin: 1.1em 0;*/
   /* end .menu ul */
 
@@ -921,13 +922,8 @@ NAVIGATION STYLES
   color: #EBE5E6;
   font-size: 1.6em;
   padding: 10px 15px;
-  	background-color: #2791ae;
-	background: -moz-linear-gradient(top, #2791ae 0%, #23839d 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2791ae), color-stop(100%,#23839d));
-	background: -webkit-linear-gradient(top, #2791ae 0%,#23839d 100%);
-	background: -o-linear-gradient(top, #2791ae 0%,#23839d 100%);
-	background: -ms-linear-gradient(top, #2791ae 0%,#23839d 100%);
-	background: linear-gradient(top, #2791ae 0%,#23839d 100%);
+border-right: 1px solid rgba(68, 68, 68, 0.39);
+background-color: transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2791ae', endColorstr='#23839d',GradientType=0 );
   /*
 					remember this is for mobile ONLY, so there's no need
@@ -972,7 +968,6 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 	font-size: 1.75em;
 }
 .container{
-	padding: 1em;
 }
 #container{
 	overflow: hidden;
