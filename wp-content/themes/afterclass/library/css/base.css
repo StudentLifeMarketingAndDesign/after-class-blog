@@ -1005,7 +1005,7 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 
 	background: url('../images/home-feature-background.png');
 	border: 1px solid #333;
-	padding: 1.5em 1.5em 0 1.5em;
+	padding: 1.6em 1.6em 0 1.6em;
 }
 			
 .post-content p {
@@ -1066,7 +1066,6 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
-  text-align: center;
 }
 
 

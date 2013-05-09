@@ -517,7 +517,7 @@ POSTS & CONTENT STYLES
 			
 			.wp-caption {
 				background: #eee;
-				padding: 5px;
+				padding: 15px;
 				background-color: rgba(255,255,255,0);
 			}
 			.wp-caption img {
@@ -1456,7 +1456,10 @@ article header .h2, article header .page-title, article header .single-title, ar
 			.alignright, img.alignright {
 				float: right;
 			}
-			.aligncenter, img.aligncenter {}
+			.aligncenter, img.aligncenter {
+				text-align: center;
+				margin: 0 auto;
+			}
 			
 			.post-content video, .post-content object {}
 			.post-content pre, .post-content code {}
