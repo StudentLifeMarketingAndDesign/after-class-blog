@@ -861,9 +861,18 @@ header-container{
 }
 
 #page_header {
-  background-image: url("../images/afterclass_illustration_tiny.png");
-  background-position: 170px 0;
+  background-image: url("../images/afterclass_illustration.jpg");
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-color: #272324;
   }
+  
+ .container{
+	 background: url("../images/header-buildings.png");
+background-position-y: 90%;
+background-position-x: 100%;
+background-repeat: no-repeat;
+ }
   
 #page_header .big_header{
 	font-size: 2em;
@@ -876,7 +885,13 @@ header-container{
 }
 
 #page_header p{
-	margin: 0;
+position: relative;
+top: -40px;
+left: 60px;
+font-size: 20px;
+color: #d0c2d0;
+text-transform: lowercase;
+background-repeat: no-repeat;
 }
 
 

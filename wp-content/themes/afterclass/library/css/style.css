@@ -375,30 +375,41 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
+text-align: center;
+background-image: linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -o-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -moz-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -webkit-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -ms-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
+background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(37,34,34)), color-stop(0.57, rgb(40,36,37)) );
+border-bottom: 1px solid rgba(68, 68, 68, 0.39);
+border-top: 1px solid rgba(68, 68, 68, 0.39);
+box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 }
 
-	.menu {
-		/*margin: 1.1em 0; */
-	}
+	.menu {}
 	
-	/* .menu is clearfixed inside mixins.less */
-	
-		.menu ul {}
-			.menu li {}
+		.menu ul {
+			/*background: #eee; */
+
+		}
+		
+			.menu li {
+				float: left;
+				position: relative;
+			}
 				.menu li a {
-					display: block;
-					text-decoration: none;
-					padding: 10px 10px;
-					background-color: #eee;
+					border-bottom: 0;
+				
 				}
-					
-					/*
-					remember this is for mobile ONLY, so there's no need
-					to even declare hover styles here, you can do it in
-					the style.less file where it's relevant. We want to 
-					keep this file as small as possible!
-					*/
-					.menu li a:hover {}
+					.menu li a:hover {
+						background-color: #342836;
+    -webkit-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    -moz-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    -o-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    -ms-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+    box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+					}
 				
 					.menu li:first-child a {}
 					.menu li:last-child a {}
@@ -409,31 +420,42 @@ NAVIGATION STYLES
 					.menu li.current-page-ancestor a {}
 					
 					/*
-					so you really have to rethink your dropdowns for mobile.
-					you don't want to have it expand too much because the
-					screen is so small. How you manage your menu should
-					depend on the project. Here's some great info on it:
-					http://www.alistapart.com/articles/organizing-mobile/
+					plan your menus and drop-downs wisely.
 					*/
-					.menu .sub-menu, .menu .children {}
-						.menu ul ul li a {
-							padding-left: 30px;
+					.menu ul li ul {
+						width: 200px;
+						border: 1px solid #ccc;
+						border-top: 0;
+						position: absolute;
+						display: none;
+						z-index: 8999;
+					}
+					
+						/* show the dropdowns on hover */
+						.menu ul li:hover ul {
+							top: auto;
+							display: block;
 						}
 						
-						 /* highlight sub-menu current page */
-						 .menu .sub-menu li.current-menu-item a, 
-						 .menu .sub-menu li.current_page_item a,
-						 .menu .sub-menu li.current-page-ancestor a {}
-						
-							.menu ul ul li a:hover {}
-							.menu ul ul li:last-child a {}
+						.menu ul ul li a {
+							padding-left: 10px;
+							border-right: 0;
+							display: block;
+							width: 180px;
+							border-bottom: 1px solid #ccc;
+						}
+							.menu ul li a:hover {}
+							.menu ul ul li:first-child a {}
+							.menu ul li:last-child a {
+								border-bottom: 0;
+							}
 							
 							/* 
-							menus should definitely not go down this
-							deep on a mobile device. that would just be
-							a mess.
+							more levels
 							*/
-							.menu ul ul ul { }
+							.menu ul ul ul {
+								
+							}
 								.menu ul li:hover ul ul { }
 
 /*********************
@@ -982,7 +1004,7 @@ point.
 	/* insert override styles here */
 	
 	nav {
-		margin-top: 0;
+		margin-top: -20px;
 	}
 	
 
@@ -1308,16 +1330,7 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-text-align: center;
-background-image: linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
-background-image: -o-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
-background-image: -moz-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
-background-image: -webkit-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
-background-image: -ms-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
-background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(37,34,34)), color-stop(0.57, rgb(40,36,37)) );
-border-bottom: 1px solid rgba(68, 68, 68, 0.39);
-border-top: 1px solid rgba(68, 68, 68, 0.39);
-box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
+margin-top: 0;
 }
 
 	.menu {}
@@ -1328,20 +1341,11 @@ box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 		}
 		
 			.menu li {
-				float: left;
-				position: relative;
 			}
 				.menu li a {
-					border-bottom: 0;
 				
 				}
 					.menu li a:hover {
-						background-color: #342836;
-    -webkit-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    -moz-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    -o-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    -ms-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
 					}
 				
 					.menu li:first-child a {}
@@ -1356,31 +1360,17 @@ box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 					plan your menus and drop-downs wisely.
 					*/
 					.menu ul li ul {
-						width: 200px;
-						border: 1px solid #ccc;
-						border-top: 0;
-						position: absolute;
-						display: none;
-						z-index: 8999;
 					}
 					
 						/* show the dropdowns on hover */
 						.menu ul li:hover ul {
-							top: auto;
-							display: block;
 						}
 						
 						.menu ul ul li a {
-							padding-left: 10px;
-							border-right: 0;
-							display: block;
-							width: 180px;
-							border-bottom: 1px solid #ccc;
 						}
 							.menu ul li a:hover {}
 							.menu ul ul li:first-child a {}
 							.menu ul li:last-child a {
-								border-bottom: 0;
 							}
 							
 							/* 
