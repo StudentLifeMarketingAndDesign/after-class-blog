@@ -24,7 +24,6 @@ Modernizr.load([
 jQuery(document).ready(function($) {
 	
 	// add all your scripts here
-	
  
 }); /* end of as page load scripts */
 
