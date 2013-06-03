@@ -175,4 +175,11 @@ return apply_filters('wp_trim_excerpt', $text, $raw_excerpt);
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'custom_wp_trim_excerpt');
 
+function division_bar()  
+{
+    wp_register_style( 'division-bar', get_template_directory_uri() . '/division-bar/css/division-bar.css', array(), '20130603', 'all' );
+    wp_enqueue_style( 'division-bar' );  
+}  
+add_action( 'wp_enqueue_scripts', 'division_bar' );  
+
 ?>
