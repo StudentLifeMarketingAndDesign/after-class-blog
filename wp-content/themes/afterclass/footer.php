@@ -28,8 +28,6 @@
   })();
 
 </script>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
-		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/division-bar/js/division-bar.js"></script>
 		<?php wp_footer(); // js scripts are inserted using this function ?>
 
 	</body>

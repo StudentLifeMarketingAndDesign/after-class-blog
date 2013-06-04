@@ -23,6 +23,7 @@
 
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
+		<link type="text/css" rel="stylsheet" href="wp-content/themes/afterclass/division-bar/css/division-bar.css" media="all">
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
