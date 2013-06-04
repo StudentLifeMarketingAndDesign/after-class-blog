@@ -47,9 +47,9 @@
 		    	<a href="#" class="search-toggle">Search</a>
         </div>
         <div class="division-search">
-            <form $FormAttributes>
-	            <label>Search</label>
-                <input type="search" placeholder="Search" results="5" name="Search" class="division-search-input">
+            <form action="/afterclass_dev/blog/" method="get">
+	            <label for="search">Search in <?php echo home_url( '/' ); ?></label>
+                <input type="search" placeholder="Search" results="5" name="s" class="division-search-input" value="<?php the_search_query(); ?>" />
                 <input type="submit" class="division-search-btn">
             </form>
         </div> 
