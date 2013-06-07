@@ -26,9 +26,6 @@
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
-		<!--[if lt IE 9]>
-		<script src="/js/vendor/respond.min.js"></script>
-		<![endif]-->
 
 		
 		<!-- load all styles for IE -->
