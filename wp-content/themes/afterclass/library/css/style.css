@@ -765,7 +765,9 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-
+#sidebar1 {
+	display: none;
+}
 .sidebar {}
 
 	.widget {}
@@ -1049,8 +1051,6 @@ want to style a page via body class? go ahead
   font-size: 100px;
   color: #ffd026;
   letter-spacing: -6px;
-  text-shadow: 4px 4px 8px #000000;
-  filter: dropshadow(color=black, offx=4, offy=4);
   /*background: url("../images/tigerhawk_scribble.png") no-repeat center right;*/
   }
   
@@ -1108,7 +1108,7 @@ want to style a page via body class? go ahead
 }
 
 #sidebar1 {
-	width: 37%;
+	width: 34%;
 	float: right;
 	display: block;
 }

@@ -184,7 +184,7 @@ add_action( 'wp_enqueue_scripts', 'division_bar' );
 
 function respond()  
 {
-    wp_register_script( 'respond',get_template_directory_uri() . '/library/js/vendor/respond.min.js');
+    wp_register_script( 'respond',get_template_directory_uri() . '/library/js/respond.min.js');
     wp_enqueue_script( 'respond' );
   
 }  

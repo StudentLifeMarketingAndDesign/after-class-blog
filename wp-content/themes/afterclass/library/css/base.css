@@ -947,7 +947,7 @@ border-left: 1px solid rgba(68, 68, 68, 0.39);
   padding: 10px 15px;
 border-right: 1px solid rgba(68, 68, 68, 0.39);
 background-color: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2791ae', endColorstr='#23839d',GradientType=0 );
+	
   /*
 					remember this is for mobile ONLY, so there's no need
 					to even declare hover styles here, you can do it in
@@ -1158,7 +1158,7 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 /* end .post-content */
 
 #sidebar1{
-	display: none;
+	/*display: none;*/
 }
 
 .wp-caption {
