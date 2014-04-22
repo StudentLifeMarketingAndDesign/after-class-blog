@@ -47,7 +47,7 @@
 			
 <header id="page_header">
 	<div class="container">
-		<div class="big_header"><a href="http://afterclass.uiowa.edu"><img src="http://hulk.imu.uiowa.edu/afterclass_dev/themes/afterclass2/images/afterclass_logo.png"></a></div>
+		<div class="big_header"><a href="http://afterclass.uiowa.edu"><img src="http://afterclass.uiowa.edu/themes/afterclass2/images/afterclass_logo.png"></a></div>
 	  <p class="subheader">the best of UI's culture, events, and nightlife</p>
 		    
 	
