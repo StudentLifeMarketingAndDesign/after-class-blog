@@ -5,10 +5,12 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 	<head>
+		<base href="<?php echo get_bloginfo('url') ?>"><!--[if lte IE 6]></base><![endif]-->
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
-		<title><?php wp_title(''); ?> Under the Dome, from the Division of Student Life at The University of Iowa</title>
+		<title><?php wp_title(''); ?> After Class: Student News, from the Division of Student Life at The University of Iowa</title>
 		
 		<!-- meta tags should be handled by SEO plugin. I recommend (http://yoast.com/wordpress/seo/) -->
 		
@@ -38,7 +40,7 @@
 	
 
 
-<?php include 'division-bar/templates/DivisionBar.html' ?>
+<?php include 'division-bar/templates/DivisionBar.php' ?>
 	
 	
 		<div id="container">

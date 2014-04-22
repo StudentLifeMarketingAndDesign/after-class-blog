@@ -1,6 +1,6 @@
 <?php
-update_option('siteurl','http://afterclass.uiowa.edu/news');
-update_option('home','http://afterclass.uiowa.edu/news');
+//update_option('siteurl','http://afterclass.uiowa.edu/news');
+//update_option('home','http://afterclass.uiowa.edu/news');
 /*
 Author: Eddie Machado
 URL: htp://themble.com/bones/
