@@ -1325,11 +1325,12 @@ POSTS & CONTENT STYLES
 
 article header .h2, article header .page-title, article header .single-title, article header .archive_title {
 	/*background: #268EAB;*/
-	padding: 10px 0;
+	padding: 0;
 	/*margin-left: -20px;*/
 	/*width: 70%;*/
 	/*margin-top: -1px;*/
 	font-size: 3em;
+	margin-top:0;
 }
 	
 		/* want to style individual post classes? Booya! */
@@ -1652,9 +1653,7 @@ SIDEBARS & ASIDES
 	
 	/* category widget */
 	.widget_categories {
-	background: #302C2D;
-	padding: 10px;
-	border: 1px solid #3E393A;
+
 	}
 	.widget_categories ul {
 		font-size: 1.25em;
@@ -1686,7 +1685,6 @@ SIDEBARS & ASIDES
 	/* text widget */
 	.textwidget {}
 	.widget_text {
-	padding: 10px;
 	}
 	
 /*********************

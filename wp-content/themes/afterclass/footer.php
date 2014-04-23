@@ -6,7 +6,7 @@
 					<nav>
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
-			
+					<p>Individuals with disabilities are encouraged to attend all University of Iowa-sponsored events. If you are a person with a disability who requires an accommodation in order to participate in this program, please contact <a href="mailto:bret-gothe@uiowa.edu">Bret Gothe</a> in advance at 319-335-3132.</p>
 					<p class="attribution">&copy; <?php bloginfo('name'); ?> <?php _e("is powered by", "bonestheme"); ?> <a href="http://wordpress.org/" title="WordPress">WordPress</a> <span class="amp">&</span> <a href="http://www.themble.com/bones" title="Bones" class="footer_bones_link">Bones</a>.</p>
 				
 				</div> <!-- end #inner-footer -->

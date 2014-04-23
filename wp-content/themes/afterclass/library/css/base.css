@@ -999,15 +999,11 @@ box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 			}
 				.menu li a {
 					border-bottom: 0;
+          border-bottom: 2px solid #282425;
 				
 				}
 					.menu li a:hover {
-						background-color: #342836;
-    -webkit-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    -moz-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    -o-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    -ms-box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
-    box-shadow: inset 0px 4px 40px 1px rgba(10, 10,10, 0.5);
+            border-bottom: 2px solid white;
 					}
 				
 					.menu li:first-child a {}
