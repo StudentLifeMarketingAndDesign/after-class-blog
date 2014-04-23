@@ -214,8 +214,8 @@ body {
 }
 
 .event-preview-sidebar img {
-	width: 84px;
-	height: 71px;
+	width: 97%;
+	/*height: 71px;*/
 	float: right;
 }
 
@@ -444,7 +444,7 @@ POSTS & CONTENT STYLES
 			
 			.post-content img { 
 				margin: 0 0 1.5em 0; 
-				max-width: 100%; 
+				width: 100%; 
 			}
 			
 			/*
@@ -1131,8 +1131,6 @@ want to style a page via body class? go ahead
 .hungryfeed_items img{
 	margin-top: 13px;
 	padding: .5em;
-	background-color: rgba(255,255,255,.05);
-	border: rgba(255,255,255,.1) 1px solid;
 }
 
 
@@ -1419,10 +1417,10 @@ article header .h2, article header .page-title, article header .single-title, ar
 
 }
 
-.post-content img{
+/*.post-content img{
 	width: intrinsic;
 	height: intrinsic;
-}
+}*/
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -1578,9 +1576,9 @@ SIDEBARS & ASIDES
 	.widget {
 		padding: 0 10px;
 		margin: 2.2em 0;
-	background: #302C2D;
+	
 	padding: 10px;
-	border: 1px solid #3E393A;
+	
 	}
 	
 		.widgettitle {
@@ -1698,9 +1696,8 @@ SIDEBARS & ASIDES
 	/* text widget */
 	.textwidget {}
 	.widget_text {
-	background: #302C2D;
 	padding: 10px;
-	border: 1px solid #3E393A;}
+	}
 	
 /*********************
 FOOTER STYLES

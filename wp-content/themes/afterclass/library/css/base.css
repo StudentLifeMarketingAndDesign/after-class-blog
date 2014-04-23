@@ -664,7 +664,7 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #EBE5E6;
-	background-image: url('../images/binding_dark.png');
+	background: #1D1C1C;
 }
 /********************
 WORDPRESS BODY CLASSES
@@ -1111,9 +1111,10 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 			but it's up to you. Feel free to change it up.
 			*/
 
-	background: url('../images/home-feature-background.png');
+	/*background: url('../images/home-feature-background.png');
 	border: 1px solid #333;
 	padding: 1.6em 1.6em 0 1.6em;
+	*/
 }
 			
 .post-content p {
@@ -1123,10 +1124,10 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 .post-content img{
 	float: left;
 	margin: 0 20px 10px 0 !important;
-	padding: .5em;
+	/* padding: .5em;
 	background-color: rgba(255,255,255,.05);
-	border: rgba(255,255,255,.1) 1px solid;
-	width: 40%;
+	border: rgba(255,255,255,.1) 1px solid;*/
+	width: 100%;
 	height: 40%;
 }
 
