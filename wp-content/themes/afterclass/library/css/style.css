@@ -194,9 +194,7 @@ body {
 }
 
 /* Event Previews on the HomePage */
-.event-preview-sidebar {
-	margin: 20px 0;
-}
+
 .event-preview-holder {
 	
 }
@@ -370,6 +368,7 @@ HEADER SYTLES
   
   #page_header .big_header img{
 	  margin-top: 0em;
+	  width: 40%;
   }
   
   #page_header P{
@@ -383,7 +382,7 @@ NAVIGATION STYLES
 *********************/
 
 .menu ul li a {
-	font-size: 1.6em;
+	font-size: 1.1em;
 	margin-top: 0px;
 }
 
@@ -392,7 +391,6 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content { 
-	margin-top: 2.2em; 
 	font-family: 'Open Sans', sans;
 }
 	
@@ -941,7 +939,8 @@ point.
 	#page_header p{
 		font-size: 1.1em;
 	}
-	
+
+
 
 } /* end of media query */
 
@@ -1036,10 +1035,11 @@ want to style a page via body class? go ahead
 /*Page Header (matching After Class's main site) */
 
 #page_header {
-  height: 235px;
-  background-image: url("../images/afterclass_illustration.jpg");
-  background-position: 170px 0;
-  }
+  height: 170px;
+  background-image: url("http://afterclass.uiowa.edu/themes/afterclass2/images/afterclass_illustration.jpg");
+  background-position: 140px 0;
+  background-size:  contain;
+}
 
 #page_header .big_header {
   position: relative;
@@ -1087,10 +1087,11 @@ want to style a page via body class? go ahead
   width: 1170px;
   height: 100%;
   margin: auto;
-  background: url("../images/header-buildings.png");
+  background: url("http://afterclass.uiowa.edu/themes/afterclass2/images/header-buildings.png");
   background-position-y: 90%;
   background-position-x: 100%;
   background-repeat: no-repeat;
+  background-size: 70%;
   }
   
 .container#footer{
@@ -1102,13 +1103,12 @@ want to style a page via body class? go ahead
 /* Main Content Styles and Sidebar */
 
 #main {
-	width: 60%;
+	width: 75%;
 	float: left;
-	padding-left: 10px;
 }
 
 #sidebar1 {
-	width: 34%;
+	width: 23%;
 	float: right;
 	display: block;
 }
@@ -1119,13 +1119,6 @@ want to style a page via body class? go ahead
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 1em;
-}
-
-.textwidget p {
-	float: left;
-	width: 151px;
-	font-size: .85em;
-	clear: left;
 }
 
 .hungryfeed_items img{
@@ -1574,17 +1567,14 @@ SIDEBARS & ASIDES
 }
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
-	
-	padding: 10px;
-	
+		padding: 0;
+		margin: 0;
 	}
 	
 		.widgettitle {
 			border-bottom: 1px solid #444;
 			margin: 0 0 0.9em 0;
-			padding-bottom: 0.5em;
+			padding-bottom: 0;
 			font-size: 2em;
 			font-family: 'Doppio One', sans;
 		}
@@ -1741,11 +1731,7 @@ FOOTER STYLES
 	font-size: 1.1em;
 }
 
-	.textwidget p {
-		float: left;
-		width: 170px;
-		font-size: .95em;
-	}
+
 }
 
 @media only screen and (min-width:920px) {
@@ -1757,11 +1743,7 @@ FOOTER STYLES
 	font-size: 1.15em;
 }
 
-	.textwidget p {
-		float: left;
-		width: 200px;
-		font-size: 1em;
-	}
+
 }
 
 /******************************************************************
@@ -1771,35 +1753,35 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 ******************************************************************/
 @media only screen and (min-width: 992px) {
-
-body {}
-
 .wrap {
-	max-width: 1140px;
-}
-
-header.header {
-	height: 240px;
+	max-width: 1170px;
 }
 
 #content {
-	width: 1000px;
+	width: 1170px;
 	margin: auto;
-
+	box-sizing: border-box;
 }
 
+.nav-wrapper {
+	width: 1170px;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1170px;
+	box-sizing: border-box;
+}
+
+.studentlife-container {
+	width: 1170px;
+}
 .event-preview-sidebar h3 {
 	float: left;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 1.15em;
 }
-
-	.textwidget p {
-		float: left;
-		width: 230px;
-		font-size: 1em;
-	}
 
 
 } /* end of media query */
@@ -1814,9 +1796,6 @@ pretty seamlessly.
 
 body {}
 
-.wrap {
-	max-width: 1240px;
-}
 
 } /* end of media query */
 

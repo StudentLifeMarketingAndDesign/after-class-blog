@@ -24,7 +24,7 @@
 						
 							<section class="post-content clearfix">
 							<?php if ( has_post_thumbnail() ) { ?>
-								<?php the_post_thumbnail('medium'); ?>
+								<?php the_post_thumbnail('large'); ?>
 							<?php }
 							the_excerpt(); ?>
 						

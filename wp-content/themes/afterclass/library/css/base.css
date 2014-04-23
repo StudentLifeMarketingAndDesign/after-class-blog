@@ -899,6 +899,7 @@ text-transform: lowercase;
 background-repeat: no-repeat;
 font-size: 1em;
 margin: 2em 0 0 -3em;
+font-family: 'Open Sans', sans;
 }
 
 
@@ -907,7 +908,7 @@ NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.less */
 .menu {
-border-left: 1px solid rgba(68, 68, 68, 0.39);
+
  /* margin: 1.1em 0;*/
   /* end .menu ul */
 
@@ -944,9 +945,8 @@ border-left: 1px solid rgba(68, 68, 68, 0.39);
   color: #EBE5E6;
   font-size: .89em;
   margin-top: -12px;
-  padding: 10px 15px;
-border-right: 1px solid rgba(68, 68, 68, 0.39);
-background-color: transparent;
+  padding: 10px;
+  background-color: transparent;
 	
   /*
 					remember this is for mobile ONLY, so there's no need
@@ -983,8 +983,6 @@ background-image: -moz-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 
 background-image: -webkit-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
 background-image: -ms-linear-gradient(bottom, rgb(37,34,34) 14%, rgb(40,36,37) 57%);
 background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(37,34,34)), color-stop(0.57, rgb(40,36,37)) );
-border-bottom: 1px solid rgba(68, 68, 68, 0.39);
-border-top: 1px solid rgba(68, 68, 68, 0.39);
 box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 }
 
@@ -1081,8 +1079,7 @@ article header .h2, article header .page-title, .single-title, .archive_title {
 	overflow: hidden;
 }
 #content {
-  margin-top: 2.2em;
-  padding: 0 1em 0 1em;
+  padding: 0 0.5em 0 0.5em;
 }
 /* end .hentry */
 /* want to style individual post classes? Booya! */
