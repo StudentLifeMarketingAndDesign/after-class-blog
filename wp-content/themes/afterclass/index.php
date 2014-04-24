@@ -10,7 +10,12 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
 						<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-							
+							<section class="post-content clearfix">
+								<?php if ( has_post_thumbnail() ) { ?>
+									<?php the_post_thumbnail('large'); ?>
+								<?php } ?>
+								
+							</section>
 							<header>
 								
 								<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
@@ -20,27 +25,23 @@
 
 							</header> <!-- end article header -->
 							
-															<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+							<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 						
 							<section class="post-content clearfix">
 							<?php the_excerpt(); ?>
-							<?php if ( has_post_thumbnail() ) { ?>
-								<?php the_post_thumbnail('large'); ?>
-							<?php } ?>
-							
+
 						
 							</section> <!-- end article section -->
 							
 							<footer>
 					
-								<p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?></p>
+								<p class="tags"><?php the_tags('Tagged as: ', ', ', ''); ?></p>
 								
 							</footer> <!-- end article footer -->
 							
 							<?php comments_template(); ?>
 						
 						</article> <!-- end article -->
-						
 						<hr />
 						<?php endwhile; ?>	
 						
