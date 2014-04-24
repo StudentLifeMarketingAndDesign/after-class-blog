@@ -309,7 +309,6 @@ H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 { 
-	font-family: sans-serif; 
 	font-weight: 500; 
 	/* 
 	if you're going to use webfonts, be sure to check your weights 
@@ -382,7 +381,7 @@ NAVIGATION STYLES
 *********************/
 
 .menu ul li a {
-	font-size: 1.1em;
+	font-size: 1.35em;
 	margin-top: 0px;
 }
 
@@ -1051,7 +1050,6 @@ want to style a page via body class? go ahead
   /*z-index: 100;*/
   margin: 0;
   padding: 0;
-  padding-right: 170px;
   font-size: 100px;
   color: #ffd026;
   letter-spacing: -6px;
@@ -1071,16 +1069,14 @@ want to style a page via body class? go ahead
 
 #page_header p {
   position: relative;
-  top: -40px;
-  left: 40px;
   /*z-index: 50;*/
   font-size: 20px;
   color: #d0c2d0;
   text-transform: lowercase;
   /*background-image: url("../images/taglinebox.png");*/
   background-repeat: no-repeat;
-  padding: 0px 45px 36px 35px;
   margin: 0;
+  padding-left: 4em;
   }
   #page_header p em {
     text-transform: uppercase;
@@ -1132,11 +1128,9 @@ want to style a page via body class? go ahead
 
 
 article {
-	/*background: url('../images/home-feature-background.png');
-	border: 1px solid #666;
-	padding: 10px;*/
+
 	padding-top: 0;
-	/*margin-bottom: 20px;*/
+	padding-bottom: 60px;
 }
 
 h2, .h2 { 
@@ -1151,8 +1145,6 @@ h2, .h2 {
 }
 
 article header .meta {
-	float: left;
-	margin: -25px 0 15px 0;
 
 }
 

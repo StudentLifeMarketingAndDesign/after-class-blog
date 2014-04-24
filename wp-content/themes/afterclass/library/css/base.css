@@ -579,11 +579,7 @@ TYPOGRAPHY
     	font-style: normal;
 	}
 */
-@font-face {
-  font-family: 'SketchBlock-Bold';
-  src: url("library/fonts/1327B9_0.eot?#iefix") format("embedded-opentype"), url("../fonts/1327B9_0.woff") format("woff"), url("../fonts/1327B9_0.ttf") format("truetype"), url("../fonts/1327B9_0.svg#wf") format("svg");
-  font-weight: light;
-  font-style: normal; }
+
 
 /* 
 use the best ampersand 
@@ -660,7 +656,7 @@ BOX SHADOW
 GENERAL STYLES
 *********************/
 body {
-	font-family: 'Doppio One';
+	font-family: 'Open Sans', sans;
 	font-size: 14px;
 	line-height: 1.5;
 	color: #EBE5E6;
@@ -768,7 +764,7 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: sans-serif;
+  font-family: 'Doppio One', sans;
   font-weight: 500;
   /* 
 	if you're going to use webfonts, be sure to check your weights 
@@ -794,13 +790,12 @@ h1,
 .h1 {
   font-size: 3em;
   line-height: 1.333em;
-  font-family: "SketchBlock-Bold", sans;
+
 
 }
 
 #logo a {
 	color: #ffde68;
-	font-family: "SketchBlock-Bold", sans;
 }
 
 p#logo {
@@ -876,7 +871,7 @@ background-repeat: no-repeat;
   
 #page_header .big_header{
 	font-size: 2em;
-	font-family: 'SketchBlock-Bold';
+
   	text-transform: lowercase;
 }
   
@@ -946,6 +941,7 @@ NAVIGATION STYLES
   font-size: .89em;
   margin-top: -12px;
   padding: 10px;
+  padding-bottom: 3px;
   background-color: transparent;
 	
   /*
@@ -1060,13 +1056,17 @@ box-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
 POSTS & CONTENT STYLES
 *********************/
 
+article {
+
+  padding-top: 0;
+  padding-bottom: 30px;
+}
 
 article .h2 a {
 	color: white;
 }
 
 article header .h2, article header .page-title, .single-title, .archive_title {
-	font-family: 'Doppio One', sans;
 	font-size: 1.75em;
 }
 .container{
