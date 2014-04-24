@@ -136,7 +136,7 @@ function bones_wpsearch($form) {
 
 function new_excerpt_more($more) {
        global $post;
-	return ' <a href="'. get_permalink($post->ID) . '"><p>Read More...</p></a>';
+	return ' <a href="'. get_permalink($post->ID) . '">Continue Reading</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
@@ -189,5 +189,14 @@ function respond()
   
 }  
 add_action( 'wp_enqueue_scripts', 'respond' );  
+
+add_filter( 'post_thumbnail_html', 'my_post_image_html', 10, 3 );
+
+function my_post_image_html( $html, $post_id, $post_image_id ) {
+
+  $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+  return $html;
+
+}
 
 ?>

@@ -23,10 +23,11 @@
 															<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 						
 							<section class="post-content clearfix">
+							<?php the_excerpt(); ?>
 							<?php if ( has_post_thumbnail() ) { ?>
 								<?php the_post_thumbnail('large'); ?>
-							<?php }
-							the_excerpt(); ?>
+							<?php } ?>
+							
 						
 							</section> <!-- end article section -->
 							
@@ -40,7 +41,7 @@
 						
 						</article> <!-- end article -->
 						
-						
+						<hr />
 						<?php endwhile; ?>	
 						
 						<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
