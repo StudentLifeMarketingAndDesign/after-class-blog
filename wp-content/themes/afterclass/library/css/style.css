@@ -285,7 +285,7 @@ LINK STYLES
 *********************/
 
 a, a:visited { 
-	color: #38d2fd; 
+	color: #CDEBF3; 
 }
 
 a:hover, a:focus { 
@@ -1252,6 +1252,19 @@ NAVIGATION STYLES
 .nav-wrapper {
 	width: 1000px;
 }
+
+/* news */
+
+.menu li#menu-item-7762 a {
+	border-bottom: 2px solid white;
+}
+/* news production */
+.menu li#menu-item-9909 a {
+	border-bottom: 2px solid white;
+}
+
+
+
 /* today */
 .nav-wrapper ul li#menu-item-9953 a {
 	color: #d6e8f0;
