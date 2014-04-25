@@ -1256,8 +1256,11 @@ NAVIGATION STYLES
 .nav-wrapper ul li#menu-item-9953 a {
 	color: #d6e8f0;
 }
-
-.nav-wrapper ul li#menu-item-9953 a:hover {
+/* today production */
+.nav-wrapper ul li#menu-item-7764 a {
+	color: #d6e8f0;
+}
+.nav-wrapper ul li#menu-item-7764 a:hover {
 	border-bottom: 2px solid #d6e8f0;
 }
 /* weekend */
@@ -1268,12 +1271,28 @@ NAVIGATION STYLES
 .nav-wrapper ul li#menu-item-9954 a:hover {
 	border-bottom: 2px solid #bde1f0;;
 }
+/* weekend production */
+.nav-wrapper ul li#menu-item-7765 a {
+	color: #bde1f0;;
+}
+
+.nav-wrapper ul li#menu-item-7765 a:hover {
+	border-bottom: 2px solid #bde1f0;;
+}
 /* subscribe */
 .nav-wrapper ul li#menu-item-9955 a {
 	color: #7BCDF0;
 }
 
 .nav-wrapper ul li#menu-item-9955 a:hover {
+	border-bottom: 2px solid #7BCDF0;
+}
+/* subscribe production */
+.nav-wrapper ul li#menu-item-7766 a {
+	color: #7BCDF0;
+}
+
+.nav-wrapper ul li#menu-item-7766 a:hover {
 	border-bottom: 2px solid #7BCDF0;
 }
 
@@ -1283,6 +1302,14 @@ NAVIGATION STYLES
 }
 
 .nav-wrapper ul li#menu-item-9956 a:hover {
+	border-bottom: 2px solid #E8CA66;
+}
+/*submit your event production */
+.nav-wrapper ul li#menu-item-9761 a {
+	color: #E8CA66;
+}
+
+.nav-wrapper ul li#menu-item-9761 a:hover {
 	border-bottom: 2px solid #E8CA66;
 }
 
