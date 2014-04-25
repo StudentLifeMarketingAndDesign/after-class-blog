@@ -1252,6 +1252,40 @@ NAVIGATION STYLES
 .nav-wrapper {
 	width: 1000px;
 }
+/* today */
+.nav-wrapper ul li#menu-item-9953 a {
+	color: #d6e8f0;
+}
+
+.nav-wrapper ul li#menu-item-9953 a:hover {
+	border-bottom: 2px solid #d6e8f0;
+}
+/* weekend */
+.nav-wrapper ul li#menu-item-9954 a {
+	color: #bde1f0;;
+}
+
+.nav-wrapper ul li#menu-item-9954 a:hover {
+	border-bottom: 2px solid #bde1f0;;
+}
+/* subscribe */
+.nav-wrapper ul li#menu-item-9955 a {
+	color: #7BCDF0;
+}
+
+.nav-wrapper ul li#menu-item-9955 a:hover {
+	border-bottom: 2px solid #7BCDF0;
+}
+
+/*submit your event */
+.nav-wrapper ul li#menu-item-9956 a {
+	color: #E8CA66;
+}
+
+.nav-wrapper ul li#menu-item-9956 a:hover {
+	border-bottom: 2px solid #E8CA66;
+}
+
 .nav {
 margin-top: 0;
 }

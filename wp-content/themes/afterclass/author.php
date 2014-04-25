@@ -24,26 +24,35 @@
 							
 							<header>
 								
-								<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+								<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 								
-								<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
+								<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time('F jS, Y'); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
 							
 							</header> <!-- end article header -->
 						
-							<section class="post-content">
+							<section class="post-content clearfix">
 							
-								<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+								<?php if ( has_post_thumbnail() ) { ?>
+									<?php the_post_thumbnail('large'); ?>
+								<?php } ?>
+							</section>
 							
-								<?php the_excerpt(); ?>
-						
+							
+							<section class="post-content clearfix">
+							<?php the_excerpt(); ?>
+							
+							
 							</section> <!-- end article section -->
 							
 							<footer>
 								
+								<p class="tags"><?php the_tags('Tagged as: ', ', ', ''); ?></p>
+								
 							</footer> <!-- end article footer -->
+							
+							<?php comments_template(); ?>
 						
 						</article> <!-- end article -->
-						
 						<?php endwhile; ?>	
 						
 						<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
@@ -64,10 +73,10 @@
 						
 						<article id="post-not-found">
 						    <header>
-						    	<h1><?php _e("No Posts Yet", "bonestheme"); ?></h1>
+						    	<h1>Not Found</h1>
 						    </header>
 						    <section class="post-content">
-						    	<p><?php _e("Sorry, What you were looking for is not here.", "bonestheme"); ?></p>
+						    	<p>Sorry, but the requested resource was not found on this site.</p>
 						    </section>
 						    <footer>
 						    </footer>
